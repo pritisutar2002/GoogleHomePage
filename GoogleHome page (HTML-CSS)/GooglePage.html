@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="al-icon" href="fa-brands fa-chrome">
+    <!-- font-awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        main {
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        header ul {
+            margin-left: 75%;
+        }
+
+        header ul li {
+            display: inline-block;
+        }
+
+        header ul li a {
+            color: rgb(58, 57, 57);
+            text-decoration: none;
+            padding: 5px;
+            margin-left: 20px;
+
+        }
+
+        header ul li a .fa-p {
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            background-color: rgb(68, 68, 136);
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header ul li a svg {
+            margin-top: 10px;
+            vertical-align: bottom;
+
+        }
+
+        main .container {
+            margin: 50px 580px;
+
+        }
+
+        .container span {
+            font-size: 100px;
+            font-weight: normal;
+            font-weight: 500;
+        }
+
+        .container .letter1 {
+            color: rgb(38, 94, 215);
+        }
+
+        .container .letter2 {
+            color: red;
+        }
+
+        .container .letter3 {
+            color: #fcc040;
+        }
+
+        .container .letter5 {
+            color: green;
+        }
+
+        .searchbar {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgb(185, 184, 184);
+            padding: 10px;
+            margin: 0px auto;
+            width: 600px;
+
+        }
+
+        .searchbar .input {
+            width: 500px;
+            padding-left: 10px;
+            padding: 5px;
+            border: transparent;
+            outline: none;
+
+        }
+
+        .searchbar .fa-microphone {
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to bottom, rgb(55, 139, 229) 25%, rgb(251, 38, 38) );
+            padding-right: 5px;
+        }
+        .searchbar .fa-camera-retro{
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to bottom, rgb(55, 139, 229) 40% ,rgb(7, 144, 7) 0%, rgb(251, 47, 47) );
+            padding-right: 5px;
+
+        }
+
+        .container2 {
+            height: 250px;
+            width: 500px;
+            margin: 10px auto;
+            /* background-color: antiquewhite; */
+
+        }
+
+        .container2 .child {
+            margin: 8px;
+            height: 105px;
+            width: 105px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 25px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container2 .child:hover {
+            background-color: rgb(238, 237, 237);
+
+        }
+
+        .container2 .child .circle {
+            padding: 15px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50px;
+            background-color: rgb(247, 241, 241);
+        }
+/* 
+        .container2 .child1 .fa-youtube{
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: radial-gradient(white 1%, red );
+        }
+        .container2 .child2 .fa-envelope{
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, blue 25%, red, yellow  , green);
+        }
+        .container2 .child3 .fa-google{
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to bottom, red 40%, yellow 30%, green 20%, blue);
+        } */
+        .container2 .child a {
+            font-size: 15px;
+            text-decoration: none;
+            color: rgb(66, 64, 64);
+        }
+
+        button {
+            border: none;
+            margin-top: 100px;
+            margin-left: 80%;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: black;
+            box-shadow: 0px 1px 3px rgb(235, 234, 234);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><i class="fa-solid fa-flask"></i></a></li>
+                <li><a href="#"><svg height="24" width="24" class="gb_h" focusable="false" viewBox="0 0 24 24">
+                            <path
+                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
+                            </path>
+                            <image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24"
+                                style="border:none;display:none \9"></image>
+                        </svg></a></li>
+                <li><a href="#"><i class="fa-sharp fa-regular fa-p"></i></a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <span class="letter1">G</span>
+            <span class="letter2">o</span>
+            <span class="letter3">o</span>
+            <span class="letter1">g</span>
+            <span class="letter5">l</span>
+            <span class="letter2">e</span>
+        </div>
+        <div class="searchbar">
+            <i class="fa fa-search"></i>
+            <input class="input" type="text">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera-retro"></i>
+
+        </div>
+        <div class="container2">
+            <div class="child child1"><i class="circle fa-brands fa-youtube"></i><a href="#">Youtube</a></div>
+            <div class="child child2"><i class="circle fa-sharp fa-solid fa-envelope"></i><a href="#">inbox(1)</a></div>
+            <div class="child child3"><i class="circle fa-brands fa-google"></i><a href="#">Sign in</a></div>
+            <div class="child child4"><i class="circle fa-brands fa-google-drive"></i><a href="#">inDrive</a></div>
+            <div class="child child5"><i class="circle fa-brands fa-linkedin"></i><a href="#">Jobs</a></div>
+            <div class="child child6"><i class="circle fa-solid fa-location-dot"></i><a href="#">search</a></div>
+            <div class="child child7"><i class="circle fa-brands fa-github"></i><a href="#">Login</a></div>
+            <div class="child child8"><i class="circle fa-solid fa-plus"></i><a href="#">Addshortcut</a></div>
+        </div>
+
+        <button><i class="fa-solid fa-pen"></i> Customize Chrome</button>
+    </main>
+</body>
+
+</html>
